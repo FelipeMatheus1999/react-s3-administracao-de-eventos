@@ -5,6 +5,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  scroll-behavior: smooth;
 
   .title {
     text-shadow: 1px 1px 2px white;
@@ -35,9 +36,9 @@ export const DrinkCard = styled.div`
   padding: 10px;
   border: none;
   border-radius: 20px;
-  box-shadow: 0px 2px 9px 5px rgba(0,0,0,0.68);
-  -webkit-box-shadow: 0px 2px 9px 5px rgba(0,0,0,0.68);
-  -moz-box-shadow: 0px 2px 9px 5px rgba(0,0,0,0.68);
+  box-shadow: 0px 2px 9px 5px rgba(0, 0, 0, 0.68);
+  -webkit-box-shadow: 0px 2px 9px 5px rgba(0, 0, 0, 0.68);
+  -moz-box-shadow: 0px 2px 9px 5px rgba(0, 0, 0, 0.68);
 
   h3 {
     color: white;
@@ -80,7 +81,7 @@ export const DrinkCard = styled.div`
     background: #6c757d;
     display: flex;
     justify-content: center;
-    align-items: flex-endya;
+    align-items: flex-end;
     width: 180px;
     height: 170px;
     margin: 10px 0 0 0;
@@ -94,11 +95,13 @@ export const DrinkCard = styled.div`
 
   .drinkCard__description {
     color: black;
-    /* text-shadow: 1px 1px 1px #a4ac86; */
+    font-size: 15px;
     white-space: wrap;
     width: 150px;
     max-height: 260px;
     overflow-y: scroll;
+    overflow-x: none;
+    padding-left: 10px;
   }
 
   .drinkCard__description::-webkit-scrollbar {

@@ -68,7 +68,7 @@ export const ProductCard = styled.div`
     height: 200px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     border-radius: 10px;
   }
 `;
