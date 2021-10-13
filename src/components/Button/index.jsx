@@ -31,8 +31,8 @@ const Button = ({ productId, id }) => {
     <div>
       <select className="select" onChange={(evt) => setEvent(evt.target.value)}>
         <option>Confraternization</option>
-        <option>Wedding</option>
         <option>Graduation</option>
+        <option>Wedding</option>
       </select>
       <button id={id} onClick={() => handleAddingCart(event)}>
         Add

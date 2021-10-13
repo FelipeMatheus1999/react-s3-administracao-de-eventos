@@ -8,8 +8,8 @@ export const Container = styled.div`
   align-items: center;
 
   .title {
-    font-size: 50px;
-    margin-top: 150px;
+    font-size: 40px;
+    margin: 100px 0 30px 0;
     text-shadow: 1px 1px 2px white;
   }
 `;
@@ -21,12 +21,16 @@ export const Cart = styled.div`
   max-width: 1100px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
   border-radius: 20px;
 
   ::-webkit-scrollbar {
     display: none;
+  }
+
+  @media (min-width: 768px) {
+    justify-content: flex-start;
   }
 `;
 

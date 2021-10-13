@@ -14,8 +14,8 @@ export const Container = styled.div`
 
   h1 {
     color: white;
-      font-size: 55px;
-      margin-left: 40px;
+    font-size: 22px;
+    margin-left: 20px;
   }
 
   span {
@@ -32,5 +32,20 @@ export const Container = styled.div`
     justify-content: space-around;
     align-items: center;
     margin-right: 20px;
+  }
+
+  @media (min-width: 586px) {
+    h1 {
+      font-size: 40px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    justify-content: space-between;
+
+    h1 {
+      font-size: 55px;
+      margin-left: 40px;
+    }
   }
 `;

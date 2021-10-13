@@ -26,14 +26,14 @@ export const DrinkCard = styled.div`
   background: #495057;
   color: white;
   justify-content: space-around;
-  width: 420px;
+  width: 350px;
   max-width: 1000px;
   height: 350px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 20px;
-  padding: 10px;
+  padding-left: 5px;
   border: none;
   border-radius: 20px;
   box-shadow: 0px 2px 9px 5px rgba(0, 0, 0, 0.68);
@@ -43,10 +43,10 @@ export const DrinkCard = styled.div`
   h3 {
     color: white;
     letter-spacing: 1.5px;
-    font-size: 22px;
+    font-size: 20px;
     white-space: wrap;
     width: 220px;
-    height: 30px;
+    height: 28px;
     overflow-y: hidden;
     margin-bottom: 5px;
     padding: 0 5px;
@@ -63,7 +63,7 @@ export const DrinkCard = styled.div`
 
   .manufactured {
     color: black;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: bold;
   }
 
@@ -95,7 +95,7 @@ export const DrinkCard = styled.div`
 
   .drinkCard__description {
     color: black;
-    font-size: 15px;
+    font-size: 13px;
     white-space: wrap;
     width: 150px;
     max-height: 260px;
@@ -136,6 +136,23 @@ export const DrinkCard = styled.div`
       transition: 0.5s;
       background: black;
       color: #208b3a;
+    }
+  }
+
+  @media (min-width: 768px) {
+    width: 420px;
+    padding: 10px;
+
+    h3 {
+      font-size: 22px;
+    }
+
+    .manufactured {
+      font-size: 12px;
+    }
+
+    .drinkCard__description {
+      font-size: 15px;
     }
   }
 `;
