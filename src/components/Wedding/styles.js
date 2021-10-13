@@ -12,6 +12,14 @@ export const Container = styled.div`
     margin: 100px 0 30px 0;
     text-shadow: 1px 1px 2px white;
   }
+
+  @media (min-width: 768px) {
+    .title {
+      font-size: 40px;
+      margin: 150px 0 30px 0;
+      text-shadow: 1px 1px 2px white;
+    }
+  }
 `;
 
 export const Cart = styled.div`
