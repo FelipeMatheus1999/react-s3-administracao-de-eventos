@@ -1,5 +1,5 @@
 import { Container, Catalog, DrinkCard } from "./styles";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { SupplierContext } from "../../Providers/supplier";
 import Header from "../Header/index.jsx";
 import Button from "../Button";
@@ -24,7 +24,7 @@ const Supplier = () => {
             <Button productId={value.id}>Add</Button>
           </div>
         </div>
-        <hr></hr>
+        <hr />
         <div className="drinkCard__description">
           <span>Description: </span>
           <span>{value.description}</span>
