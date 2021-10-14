@@ -96,6 +96,7 @@ export const DrinkCard = styled.div`
   .drinkCard__description {
     color: black;
     font-size: 13px;
+    font-weight: bold;
     white-space: wrap;
     width: 150px;
     max-height: 260px;
